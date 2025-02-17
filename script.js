@@ -24,7 +24,7 @@ async function fetchNews(query) {
         if (!data.articles) throw new Error('No articles found');
         bindData(data.articles);
     } catch (error) {
-        console.error('Failed to fetch news:', error.message);
+        console.error('Failed to fetch news:', error);
         alert('Failed to load news. Please try again later.');
     }
 }
